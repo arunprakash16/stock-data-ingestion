@@ -15,3 +15,4 @@ Data per stock (history to till date) will be sent in a csv file.
          3. Quarterly average of High, Low and Volume 
          4. Yearly average of High, Low and Volume
 3. src/batch_process/\__init__.py - module requires file path to run the program to insert data in to mysql
+   e.g. run command src/batch_process/__init__.py -fp ../../data/MSFT.csv
