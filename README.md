@@ -49,5 +49,5 @@ Stock trading data will be received in real time (streaming)
       3. Snowflake cluster cost depends on the usage. Since, heavy usage is between trading hours cost can be saved for rest of the off hours.   
    2. SMA of 20, 50 and 200 days based on close price can be calculated through batch job.
 
-![alt text](https://github.com/arunprakash16/stock-data-ingestion/resource/images/stream_stock.png?raw=true)
+![Stream stock ingestion design](/resource/images/stream_stock.png?raw=true)
       
