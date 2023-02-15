@@ -5,6 +5,7 @@ Data per stock (history to till date) will be sent in a csv file.
 1. Assumptions:
    1. data-format (header): Date, Open, High, Low, Close, Adj Close, Volume
    2. file name: stock name
+   3. anticipating low volume of data hence for loop has been is being used to convert data type, otherwise depending on the volume pandas df can be used to leverage inbuilt datatype conversion. 
 2. db-scripts contains ddl and dql.
    1. ddl - contains sql script for table schema
    2. dql - contains sql script for query to calculate below information:
@@ -32,7 +33,8 @@ Stock trading data will be received in real time (streaming)
       8. low_52: number
    3. SMA - Simple Moving Average of 20, 50 and 200 days are calculated based on close price.
    4. API - Input parms:
-      1. stock_id
+      1. stock_id: string
+      2. trade_date: timestamp
    5. API - Output: Json object specification
       1. stock_id: string
       2. last_trade_date: timestamp
